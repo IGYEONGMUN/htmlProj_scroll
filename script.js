@@ -17,3 +17,13 @@ window.addEventListener("wheel", (e) => {
     behavior: "smooth",
   });
 });
+
+/*slick slider*/ $(document).ready(function () {
+  $(".myslider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: false,
+    dots: true,
+    speed: 300,
+  });
+});
