@@ -32,7 +32,7 @@ body {
   .section {
     width: 100vw;
     height: 100vh;
-    perspective: 1480px;
+    perspective: 1200px;
     &:nth-child(1) {
       background: url("./imgs/apple_background.jpg") center;
     }
@@ -94,7 +94,6 @@ body {
         }
       }
     }
-
     &:nth-child(3) {
       h2 {
         display: inline-block;
@@ -110,19 +109,136 @@ body {
       }
       .myslider {
         .item {
-          border: 1px solid #f00;
-          width: 100px;
+          position: relative;
+
           height: 400px;
-          margin-left: 50px;
           background: var(--main-light-color);
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-          border-radius: 30px 30px 30px 30px;
           overflow: hidden;
+          &.first {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 50px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.second {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 30px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.third {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 10px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.fourth {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 50px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.fifth {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 30px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.sixth {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 10px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.seventh {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 50px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.eighth {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 30px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          &.nineth {
+            div {
+              position: absolute;
+              width: 570px;
+              height: 100%;
+              margin-left: 10px;
+              border: 1px solid #f00;
+              border-radius: 30px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            }
+          }
         }
       }
     }
     &:nth-child(4) {
+      border: 1px solid #000;
+      width: 100%;
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
       .bottom {
+        border: 1px solid #f00;
+        width: 700px;
+        height: 500px;
+        margin-top: 70px;
+      }
+      .divider {
+        position: absolute;
+        border: 5px solid var(--lnb-font-color);
+        width: 50%;
+        margin-top: 500px;
+      }
+      .footer {
+        display: flex;
+        width: 200px;
+        height: 200px;
         border: 1px solid #f00;
       }
     }

@@ -1,5 +1,6 @@
-:root{
-    --main-dark-color : #000;
-    --main-light-color:#fff;
-    --sub-font-color : #6e6e73;;
+:root {
+  --main-dark-color: #000;
+  --main-light-color: #fff;
+  --sub-font-color: #6e6e73;
+  --lnb-font-color: #f00;
 }
