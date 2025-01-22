@@ -49,47 +49,128 @@ body {
           position: absolute;
 
           transform-style: preserve-3d;
-          backface-visibility: hidden;
           .cell {
+            backface-visibility: hidden;
             width: 200px;
             height: 300px;
-
-            &:nth-child(1) {
-              background: url(./imgs/product1.jpg) center/cover;
-            }
-            &:nth-child(2) {
-              background: url(./imgs/product9.jpg) center/cover;
-            }
           }
           &:nth-child(1) {
-            transform: rotateY(0deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(0deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product1.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product11.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(2) {
-            transform: rotateY(36deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(36deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product2.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product12.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(3) {
-            transform: rotateY(72deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(72deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product3.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background: url(./imgs/product13.jpg) center/cover;
+              }
+            }
           }
           &:nth-child(4) {
-            transform: rotateY(108deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(108deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product4.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background: url(./imgs/product14.jpg) center/cover;
+              }
+            }
           }
           &:nth-child(5) {
-            transform: rotateY(144deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(144deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product5.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product15.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(6) {
-            transform: rotateY(180deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(180deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product6.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product16.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(7) {
-            transform: rotateY(216deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(216deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product7.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product17.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(8) {
-            transform: rotateY(252deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(252deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product8.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product18.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(9) {
-            transform: rotateY(288deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(288deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product9.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product19.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
           &:nth-child(10) {
-            transform: rotateY(324deg) translateZ(-600px);
+            .cell {
+              transform: rotateY(324deg) translateZ(-600px);
+              &:nth-child(1) {
+                background: url(./imgs/product10.jpg) center/cover;
+              }
+              &:nth-child(2) {
+                background-image: url(./imgs/product20.jpg);
+                background-size: 200px 300px;
+              }
+            }
           }
         }
       }
@@ -99,7 +180,7 @@ body {
         display: inline-block;
         padding-top: 150px;
         margin-left: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
       }
       p {
         display: inline-block;
@@ -110,7 +191,6 @@ body {
       .myslider {
         .item {
           position: relative;
-
           height: 400px;
           background: var(--main-light-color);
           overflow: hidden;
@@ -120,9 +200,26 @@ body {
               width: 570px;
               height: 100%;
               margin-left: 50px;
-              border: 1px solid #f00;
               border-radius: 30px;
               box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+              background-image: url(./imgs/slide1.jpg);
+              background-size: 450px 400px;
+              background-repeat: no-repeat;
+              background-position: bottom right;
+              p {
+                &:nth-child(1) {
+                  display: block;
+                  margin-left: 30px;
+                  margin-top: 30px;
+                  font-size: 0.85rem;
+                }
+                &:nth-child(2) {
+                  display: block;
+                  margin-left: 30px;
+                  margin-top: 15px;
+                  color: var(--main-dark-color);
+                }
+              }
             }
           }
           &.second {
@@ -131,9 +228,26 @@ body {
               width: 570px;
               height: 100%;
               margin-left: 30px;
-              border: 1px solid #f00;
               border-radius: 30px;
               box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+              background-image: url(./imgs/slide2.jpg);
+              background-size: 570px 115%;
+              background-repeat: no-repeat;
+              background-position: center;
+              p {
+                &:nth-child(1) {
+                  display: block;
+                  margin-left: 30px;
+                  margin-top: 30px;
+                  font-size: 0.85rem;
+                }
+                &:nth-child(2) {
+                  display: block;
+                  margin-left: 30px;
+                  margin-top: 15px;
+                  color: var(--main-dark-color);
+                }
+              }
             }
           }
           &.third {
@@ -142,9 +256,16 @@ body {
               width: 570px;
               height: 100%;
               margin-left: 10px;
-              border: 1px solid #f00;
               border-radius: 30px;
               box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+              background-image: url(./imgs/slide3.jpg);
+              background-size: 105% 410px;
+              background-position: -10px;
+              p {
+                color: var(--main-dark-color);
+                margin-top: 55px;
+                margin-left: 15px;
+              }
             }
           }
           &.fourth {
@@ -217,7 +338,7 @@ body {
       }
     }
     &:nth-child(4) {
-      border: 1px solid #000;
+      border: 2px solid #000;
       width: 100%;
       display: flex;
 
@@ -231,14 +352,14 @@ body {
       }
       .divider {
         position: absolute;
-        border: 5px solid var(--lnb-font-color);
-        width: 50%;
-        margin-top: 500px;
+        border: 1px solid #ddd;
+        width: 700px;
+        margin-top: 600px;
       }
       .footer {
-        display: flex;
-        width: 200px;
-        height: 200px;
+        margin-top: 60px;
+        width: 700px;
+        height: 260px;
         border: 1px solid #f00;
       }
     }
